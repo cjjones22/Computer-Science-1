@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Assignment3{
 	public static void main(String[] args){
 
-    Scanner keyboard = new Scanner(System.in);
+    	Scanner keyboard = new Scanner(System.in);
 
 		System.out.print("Enter the coefficient of the quadratic term: ");
 		double quadratic_co = keyboard.nextDouble();
