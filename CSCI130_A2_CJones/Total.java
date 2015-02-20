@@ -10,7 +10,7 @@
  *
  */
 
-import csci130.*;
+import java.util.Scanner;
 
 public class Total {
 
@@ -37,14 +37,16 @@ public class Total {
 	}
 
 	public static final void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
 		Total running = new Total();
 
 		System.out.println("Enter an initial value");
-		running.addToTotal(KeyboardReader.readInt());
+		running.addToTotal(input.nextInt());
 
 		System.out.println();
 		System.out.println("Enter an amount smaller than the initial value");
-		running.subtractFromTotal(KeyboardReader.readInt());
+		running.subtractFromTotal(input.nextInt());
 
 		System.out.println("Current total is " + running.total);
 
