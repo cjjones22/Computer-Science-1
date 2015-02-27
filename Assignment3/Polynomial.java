@@ -1,17 +1,26 @@
+import csci130.*;
+
 public class Polynomial {
 
 	private double quadratic_co;
 	private double linear_co;
 	private double constant;
 
-	//default constructor
+	//constructor
 	public Polynomial(){
+		this.constructPolynomial();
 	}
 
-	public void constructPolynomial(double quadratic_co, double linear_co, double constant){
-		this.quadratic_co = quadratic_co;
-		this.linear_co = linear_co;
-		this.constant = constant;
+	public void constructPolynomial(){
+		System.out.print("Enter the coefficient of the quadratic term: ");
+		quadratic_co = KeyboardReader.readDouble();
+
+		System.out.print("Enter the coefficient of the linear term: ");
+		linear_co = KeyboardReader.readDouble();
+
+		System.out.print("Enter the constant term: ");
+		constant = KeyboardReader.readDouble();
+
 	}
 
 	public double functionValue(double arg){
